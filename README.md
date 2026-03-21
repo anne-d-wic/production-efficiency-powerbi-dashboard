@@ -92,6 +92,23 @@ Main elements:
 
 ---
 
+## Data Aggregation Layer
+
+In addition to the main dataset, several aggregated tables were generated using Python to simulate real-world data preparation workflows.
+
+These tables include:
+
+- machine_performance.csv
+- production_by_month.csv
+- production_by_plant.csv
+- shift_performance.csv
+
+Although these tables were not directly used in the Power BI model, they demonstrate how data can be pre-aggregated for performance optimization or alternative reporting needs.
+
+This reflects a realistic analytics workflow where data transformation can occur upstream before visualization.
+
+---
+
 ## Repository Structure
 
 - `dashboard/` → Power BI dashboard file
