@@ -38,7 +38,7 @@ This project follows a modern analytics workflow:
 
 ### 1. Production Efficiency Overview
 
-![Production Overview](images/page1_overview.png)
+![Production Overview](images/production_overview.png)
 
 This page provides a high-level view of production output, downtime, efficiency and plant comparison.
 
@@ -54,7 +54,7 @@ Main elements:
 
 ### 2. Machine Performance Analysis
 
-![Machine Performance](images/page2_machine_performance.png)
+![Machine Performance](images/machine_performance.png)
 
 This page focuses on machine reliability and production impact.
 
@@ -68,7 +68,7 @@ Main elements:
 
 ### 3. Operational Efficiency by Shift
 
-![Shift Efficiency](images/page3_shift_efficiency.png)
+![Shift Efficiency](images/shift_efficiency.png)
 
 This page compares operational performance across shifts.
 
