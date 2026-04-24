@@ -133,8 +133,19 @@ An operations manager may start on Production Efficiency Overview to isolate a p
 ## Data Model
 <details><summary><strong>See more</strong></summary>
   
-The model follows a star schema structure to support KPI consistency, scalable filtering, and drill-down analysis.
-The dashboard relies on a relational model connecting production records, plants, machines, shifts, and time dimensions to support operational analysis from summary level to detailed investigation.
+The dashboard relies on a structured reporting model designed to support reliable KPI calculation and scalable filtering across the main operational dimensions of the analysis.
+It links production data with entities such as plants, machines, shifts, and time, allowing the report to support both summary-level monitoring and more detailed performance investigation.
+
+This model helps ensure:
+- consistent measure definition across pages,
+- efficient filtering and slicing,
+- clear navigation between operational views,
+- maintainable reporting logic as the analysis grows.
+
+The diagram below illustrates the core reporting structure used to connect production records with the main business dimensions of the dashboard.
+
+![Data Model](images/data_model.png)
+
 </details>
 
 ## Data Preparation Workflow
