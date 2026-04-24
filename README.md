@@ -1,31 +1,30 @@
 # Production Efficiency Power BI Dashboard
-
-Power BI dashboard for industrial production monitoring, machine reliability analysis, and operational efficiency tracking across a simulated factory environment.
+Industrial production efficiency dashboard built with Python, Power BI, and structured reporting logic for operational performance analysis.
 
 ## Overview
+This project demonstrates how analytics can support industrial production monitoring and operational decision-making in a realistic factory environment.
 
-This project simulates a realistic production reporting environment and turns operational data into a decision-support dashboard built with Power BI and Python.
+The dashboard was designed to analyze production output, machine downtime, operational efficiency, and shift performance across plants and assets. The dataset was synthetically generated, validated, and enriched using Python before being modeled and visualized in Power BI.
 
-It is designed to help answer five practical questions:
-
-- Which plants contribute the most to production output?
-- Which machines generate the most downtime?
-- How does machine age relate to operational risk?
-- Which shift performs best in terms of production, efficiency, and quality?
-- How does production evolve over time?
+The goal is not only to describe production activity, but to identify where performance losses are concentrated, which assets create the greatest operational pressure, and which operating conditions should be prioritized for corrective action.
 
 ## Why This Project Matters
+This dashboard is designed to support operational decision-making, not just production reporting. It helps operations analysts, plant managers, and continuous improvement teams identify where output losses are concentrated, understand which machines contribute most to downtime, compare plant and shift performance, and focus improvement efforts on the areas generating the highest operational impact.
 
-This dashboard is designed to support operational decision-making, not just production reporting.
+By combining production, downtime, efficiency, and quality indicators in one analytical model, the dashboard makes it easier to move from monitoring to action.
 
-It helps plant managers, operations analysts, and continuous improvement teams:
-- identify where production losses are concentrated
-- isolate the main drivers of downtime
-- compare plant and shift performance
-- connect machine reliability with operational efficiency
-- prioritize corrective action on the assets and operating conditions that have the greatest impact
+## Business Questions Addressed
+This dashboard is designed to help answer key operational questions such as:
 
-## Dashboard Pages
+- Which plants contribute the most to total production output?
+- Which machines generate the largest share of downtime and lost production?
+- How does machine age relate to operational pressure and reliability risk?
+- Which shift performs best in terms of output, efficiency, and quality?
+- How does production performance evolve over time across the factory environment?
+
+## Dashboard Structure
+
+The dashboard is organized into three complementary report pages, each designed to answer a distinct operational question while remaining part of the same analytical flow.
 
 | Page | Purpose |
 |---|---|
@@ -36,12 +35,21 @@ It helps plant managers, operations analysts, and continuous improvement teams:
 ## Screenshots
 
 ### Production Efficiency Overview
+
+This page provides the high-level summary of production performance. It is designed to help users quickly understand how output, downtime, and efficiency are distributed across plants, identify where performance pressure is concentrated, and detect which areas require closer operational review.
+
 ![Production Overview](images/production_overview.png)
 
 ### Machine Performance Analysis
+
+This page focuses on asset reliability and production impact. It helps users assess which machines contribute most to downtime, compare operational pressure across assets, and understand how equipment characteristics such as age relate to reliability and lost production.
+
 ![Machine Performance](images/machine_performance.png)
 
 ### Operational Efficiency by Shift
+
+This page compares operational performance across shifts. It helps users evaluate whether output, efficiency, and quality differ by operating period and whether shift-level performance patterns may explain part of the broader production results.
+
 ![Shift Efficiency](images/shift_efficiency.png)
 
 ## Tools & Skills
@@ -53,12 +61,24 @@ It helps plant managers, operations analysts, and continuous improvement teams:
 - GitHub
 
 ### Skills Demonstrated
-- KPI design for operational reporting
-- Power BI dashboard development
-- star schema modeling
-- business-oriented dashboard storytelling
-- Python-based data preparation and validation
-- production efficiency and downtime analysis
+- star schema data modeling
+- DAX KPI design for operational reporting
+- Python-based data generation, validation, and transformation
+- aggregated reporting table design
+- industrial performance analysis
+- dashboard storytelling for operational decision-making
+
+## What This Project Demonstrates Technically
+This project demonstrates the ability to design a business-oriented analytics workflow from end to end. It combines Python-based data generation and validation, upstream aggregation logic, KPI design, data modeling in Power BI, and dashboard development oriented toward operational decision support.
+
+From a technical perspective, the project shows:
+
+- structured dataset generation for a realistic industrial use case
+- sanity checks and enrichment logic in Python
+- reporting-oriented aggregation design
+- star schema modeling in Power BI
+- KPI articulation across multiple operational dimensions
+- dashboard storytelling for plant, machine, and shift analysis
 
 ## Business Context and Objective
 <details><summary><strong>See more</strong></summary>
@@ -119,21 +139,51 @@ When a user applies a filter on one page, that context is preserved while naviga
 An operations manager may start on Production Efficiency Overview to isolate a plant with below-average efficiency. From there, they can move to Machine Performance Analysis to identify which machines are contributing most to downtime and lost production. They can then open Operational Efficiency by Shift to determine whether the performance gap is also linked to a specific shift pattern or operating window.
 </details>
 
-## Key KPIs
+## Data Workflow
 <details><summary><strong>See more</strong></summary>
   
-- Total production: total output generated across the selected scope
-- Total downtime: cumulative downtime recorded for the selected assets or plants
-- Average production efficiency: average ratio between achieved and expected production
-- Lost production: estimated production volume not achieved because of downtime or reduced efficiency
-- Shift quality score: comparative view of quality performance across shifts
-- Downtime concentration: share of downtime attributable to the most disruptive machines
+This project follows a structured analytics workflow that moves from simulated operational records to reporting-ready analysis in Power BI:
+
+1. Production data generation using Python
+2. Data validation and sanity checks across operational fields
+3. Aggregated table generation for reporting support
+4. Star schema modeling in Power BI
+5. KPI design and dashboard development in Power BI
+
+This workflow reflects a realistic industrial analytics process where part of the preparation and aggregation logic happens upstream before visualization.
+
+### How the Data Is Rebuilt
+The reporting datasets used in this dashboard are rebuilt through a three-step Python workflow. The first script generates a realistic industrial production dataset, the second validates consistency rules across the generated records, and the third creates aggregated reporting tables used to support analysis and performance exploration.
+
+This approach makes the project reproducible and shows how raw simulated data can be turned into structured, analysis-ready inputs for industrial reporting.
+
+### Transformation Logic
+Python is used to move the project from simulated operational records to analysis-ready reporting tables. This includes generating production data, checking consistency across downtime and efficiency fields, and producing aggregation layers that support KPI interpretation in Power BI.
+
+The transformation flow can be summarized as follows: simulated production records -> sanity checks -> aggregated reporting tables -> Power BI model -> dashboard analysis.
+</details>
+
+## KPI Logic
+<details><summary><strong>See more</strong></summary>
+
+The dashboard is built around a set of KPIs designed to connect production volume, operational efficiency, and downtime impact rather than treating them as isolated metrics.
+
+For example:
+
+- total production measures output generated across the selected scope,
+- total downtime captures the cumulative time lost because of machine interruptions,
+- average production efficiency compares achieved output against expected operating performance,
+- lost production estimates the operational impact of downtime and reduced efficiency,
+- shift-level indicators combine output, efficiency, and quality to compare operating performance across teams.
+
+This KPI design helps the dashboard move from descriptive reporting to performance interpretation by linking output results to the operational conditions that influence them.
 </details>
 
 ## Data Model
 <details><summary><strong>See more</strong></summary>
   
 The dashboard relies on a structured reporting model designed to support reliable KPI calculation and scalable filtering across the main operational dimensions of the analysis.
+
 It links production data with entities such as plants, machines, shifts, and time, allowing the report to support both summary-level monitoring and more detailed performance investigation.
 
 This model helps ensure:
@@ -146,28 +196,6 @@ The diagram below illustrates the core reporting structure used to connect produ
 
 ![Data Model](images/data_model.png)
 
-</details>
-
-## Data Preparation Workflow
-<details><summary><strong>See more</strong></summary>
-  
-The reporting workflow follows three Python-driven steps before dashboard design in Power BI:
-
-1. Generate realistic production records using Python
-2. Run sanity checks across production, downtime, and enrichment fields
-3. Generate aggregated tables for analysis-ready reporting support
-4. Build the data model in Power BI
-5. Design KPI-driven dashboard pages for operational monitoring
-
-### How the Data Is Rebuilt
-The reporting datasets used in this dashboard are rebuilt through a three-step Python workflow. The first script generates a realistic industrial production dataset, the second validates consistency rules across the generated records, and the third creates aggregated reporting tables used to support analysis and performance exploration.
-
-This approach makes the project reproducible and shows how raw simulated data can be turned into structured, analysis-ready inputs for industrial reporting.
-
-### Transformation Logic
-Python is used to move the project from simulated operational records to analysis-ready reporting tables. This includes generating production data, checking consistency across downtime and efficiency fields, and producing aggregation layers that support KPI interpretation in Power BI.
-
-The transformation flow can be summarized as follows: simulated production records -> sanity checks -> aggregated reporting tables -> Power BI model -> dashboard analysis.
 </details>
 
 ## Business Assumptions
@@ -184,7 +212,7 @@ Machine risk can be interpreted by combining downtime intensity with asset chara
 ## Data Aggregation Layer
 <details><summary><strong>See more</strong></summary>
   
-In addition to the detailed production dataset, the project includes aggregated tables generated with Python to simulate upstream reporting preparation.
+In addition to the detailed production dataset, several aggregated tables were generated using Python to simulate upstream reporting preparation.
 
 These tables include:
 
@@ -193,8 +221,17 @@ These tables include:
 - `production_by_plant.csv`
 - `shift_performance.csv`
 
-Although these tables may not all be used directly in the Power BI model, they demonstrate a realistic analytics workflow where part of the transformation and performance optimization happens before visualization.
+Although these tables are not necessarily the core fact tables of the Power BI model, they demonstrate an important modeling principle: some reporting logic is often more efficient and easier to govern when it is prepared before visualization.
+
+This strengthens the project by showing not only dashboard design, but also awareness of upstream transformation, aggregation strategy, and reporting scalability.
+
 </details>
+
+## Business Interpretation
+
+The value of the dashboard does not come only from showing production metrics, but from helping users interpret how they relate to one another. High output alone is not sufficient if it is associated with elevated downtime or lower efficiency. In the same way, strong shift performance or stable machine behavior can reveal where operating conditions are more controlled and where improvement practices may already be effective.
+
+By connecting production, downtime, efficiency, quality, and asset characteristics, the dashboard supports a more complete reading of operational performance and helps guide improvement priorities.
 
 ## Key Insights
 <details><summary><strong>See more</strong></summary>
