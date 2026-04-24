@@ -161,11 +161,11 @@ The dashboard is built around a set of KPIs designed to connect production volum
 
 For example:
 
-- total production measures output generated across the selected scope,
-- total downtime captures the cumulative time lost because of machine interruptions,
-- average production efficiency compares achieved output against expected operating performance,
-- lost production estimates the operational impact of downtime and reduced efficiency,
-- shift-level indicators combine output, efficiency, and quality to compare operating performance across teams.
+- total production measures output generated across the selected scope
+- total downtime captures the cumulative time lost because of machine interruptions
+- average production efficiency compares achieved output against expected operating performance
+- lost production estimates the operational impact of downtime and reduced efficiency
+- shift-level indicators combine output, efficiency, and quality to compare operating performance across teams
 
 This KPI design helps the dashboard move from descriptive reporting to performance interpretation by linking output results to the operational conditions that influence them.
 </details>
@@ -178,10 +178,10 @@ The dashboard relies on a structured reporting model designed to support reliabl
 It links production data with entities such as plants, machines, shifts, and time, allowing the report to support both summary-level monitoring and more detailed performance investigation.
 
 This model helps ensure:
-- consistent measure definition across pages,
-- efficient filtering and slicing,
-- clear navigation between operational views,
-- maintainable reporting logic as the analysis grows.
+- consistent measure definition across pages
+- efficient filtering and slicing
+- clear navigation between operational views
+- maintainable reporting logic as the analysis grows
 
 The diagram below illustrates the core reporting structure used to connect production records with the main business dimensions of the dashboard.
 
