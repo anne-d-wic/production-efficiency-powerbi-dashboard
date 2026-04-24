@@ -249,7 +249,7 @@ The workflow produces and updates detailed and aggregated files, including:
 </details>
 
 ## Notes
-<details><summary><strong> </strong></summary>
+<details><summary><strong>See more</strong></summary>
 
 The data used in this project is simulated for demonstration purposes.
 
