@@ -52,21 +52,12 @@ This page compares operational performance across shifts. It helps users evaluat
 
 ![Shift Efficiency](images/shift_efficiency.png)
 
-## Tools & Skills
-### Tools Used
+## Tools Used
 - Power BI
 - DAX
 - Python
 - Pandas
 - GitHub
-
-### Skills Demonstrated
-- star schema data modeling
-- DAX KPI design for operational reporting
-- Python-based data generation, validation, and transformation
-- aggregated reporting table design
-- industrial performance analysis
-- dashboard storytelling for operational decision-making
 
 ## What This Project Demonstrates Technically
 This project demonstrates the ability to design a business-oriented analytics workflow from end to end. It combines Python-based data generation and validation, upstream aggregation logic, KPI design, data modeling in Power BI, and dashboard development oriented toward operational decision support.
@@ -224,14 +215,13 @@ These tables include:
 Although these tables are not necessarily the core fact tables of the Power BI model, they demonstrate an important modeling principle: some reporting logic is often more efficient and easier to govern when it is prepared before visualization.
 
 This strengthens the project by showing not only dashboard design, but also awareness of upstream transformation, aggregation strategy, and reporting scalability.
-
 </details>
 
 ## Business Interpretation
-
-The value of the dashboard does not come only from showing production metrics, but from helping users interpret how they relate to one another. High output alone is not sufficient if it is associated with elevated downtime or lower efficiency. In the same way, strong shift performance or stable machine behavior can reveal where operating conditions are more controlled and where improvement practices may already be effective.
-
-By connecting production, downtime, efficiency, quality, and asset characteristics, the dashboard supports a more complete reading of operational performance and helps guide improvement priorities.
+<details><summary><strong>See more</strong></summary>
+  
+The value of the dashboard does not come only from showing production metrics, but from helping users interpret how they relate to one another. High output alone is not sufficient if it is associated with elevated downtime or lower efficiency. By connecting production, downtime, efficiency, quality, and asset characteristics, the dashboard supports a more complete reading of operational performance.
+</details>
 
 ## Key Insights
 <details><summary><strong>See more</strong></summary>
@@ -284,6 +274,14 @@ The workflow produces and updates detailed and aggregated files, including:
 - Power BI Desktop
 </details>
 
+## Skills Demonstrated
+- star schema data modeling
+- DAX KPI design for operational reporting
+- Python-based data generation, validation, and transformation
+- aggregated reporting table design
+- industrial performance analysis
+- dashboard storytelling for operational decision-making
+
 ## Project Structure
 <details><summary><strong>See more</strong></summary>
   
@@ -299,7 +297,5 @@ The workflow produces and updates detailed and aggregated files, including:
 ## Notes
 <details><summary><strong>See more</strong></summary>
 
-The data used in this project is simulated for demonstration purposes.
-
-The emphasis is on analytical reasoning, KPI design, transformation logic, dashboard structure, and business-oriented interpretation in a realistic industrial reporting scenario.
+The data used in this project is simulated for demonstration purposes. The focus is on analytical reasoning, KPI design, transformation logic, dashboard structure, and business-oriented interpretation in a realistic industrial reporting scenario.
 </details>
