@@ -192,21 +192,21 @@ The analysis is designed to highlight where production pressure, downtime concen
 
 It helps surface insights such as:
 
-- which plants contribute the highest share of production output,
-- which machines account for the largest share of downtime,
-- whether older assets are associated with higher operational risk,
-- which shifts combine stronger output with better efficiency and quality,
-- where operations teams may need to focus corrective action to reduce lost production.
+- which plants contribute the highest share of production output
+- which machines account for the largest share of downtime
+- whether older assets are associated with higher operational risk
+- which shifts combine stronger output with better efficiency and quality
+- where operations teams may need to focus corrective action to reduce lost production
 </details>
 
 ## Recommendations
 <details><summary><strong>See more</strong></summary>
   
-- Prioritize maintenance action on the machines contributing the most downtime and lost production.
-- Compare plant-level performance to identify where operational practices differ significantly.
-- Review shift patterns when output, efficiency, and quality do not move together.
-- Use machine-age and downtime relationships as an early signal for asset reliability risk.
-- Track production, downtime, and efficiency together rather than in isolated views.
+- Prioritize maintenance action on the machines contributing the most downtime and lost production
+- Compare plant-level performance to identify where operational practices differ significantly
+- Review shift patterns when output, efficiency, and quality do not move together
+- Use machine-age and downtime relationships as an early signal for asset reliability risk
+- Track production, downtime, and efficiency together rather than in isolated views
 </details>
 
 ## Reproducibility
@@ -249,7 +249,7 @@ The workflow produces and updates detailed and aggregated files, including:
 </details>
 
 ## Notes
-<details><summary><strong>See more</strong></summary>
+<details><summary><strong> </strong></summary>
 
 The data used in this project is simulated for demonstration purposes.
 
